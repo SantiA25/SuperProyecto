@@ -2,35 +2,104 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:"Open Sans", sans-serif;;
+}
+
+:root{
+    --azul:rgb(0, 106, 255);
+    --azul-proyecto:rgb(2, 25, 61);
+    --blanco:rgb(255, 255, 255);
+    --negro:rgb(0, 0, 0);
 }
 
 .header{
     width: 100%;
     height: 10vh;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(4, 4, 63);
+    position: fixed;
 }
 
 .header .header__img{
     width: 50%;
     height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .header .header__img .header__logo{
     width: 100%;
-    height: 80%;
+    height: 65%;
 }
 
 .header .header__moon .header__icon-moon{
-    font-size: 2rem;
-    color: #fff;
+    font-size: 1.4rem;
+    color: var(--negro);
+    background-color: var(--blanco);
+    padding: 10px 15px;
+    border-radius: 50%;
 }
 
 .header .header__bar .header__bar-icon{
     font-size: 2rem;
-    color: #fff;
+    color: var(--azul);
+    margin-right: 40px;
+}
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(8deg,rgba(251, 251, 251, 0.206) 4%,transparent),var(--azul-proyecto);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .section-1__titulo{
+    color: var(--blanco);
+    text-align: center;
+}
+
+
+.section-1 .section-1__titulo .section-1__h1{
+    font-size: 1.7rem;
+    line-height: 30px;
+}
+
+.section-1 .section-1__titulo .section-1__h1 .section-1__h1-top{
+    display: block;
+}
+
+.section-1 .section-1__titulo .section-1__h1 .section-1__h1-botton{
+    display: block;
+}
+
+.section-1 .section-1__titulo .section-1__h1 .section-1__h1-botton .section-1__h1-botton--color{
+    color: var(--azul);
+}
+
+.section-1 .section-1__texto{
+    text-align: center;
+    width: 90%;
+    color: var(--blanco);
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.section-1 .section-1__redes{
+    width: 50%;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.section-1 .section-1__redes .section-1__social{
+    color:var(--azul);
+    font-size: 1.2rem;
 }
