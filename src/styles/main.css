@@ -1,0 +1,55 @@
+@import '../../node_modules/normalize.css/normalize.css';
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 1px 1px 15px 5px rgb(182, 182, 182);
+}
+.header .header__hamburger {
+  width: 15%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__hamburger .header__hamburger-icon {
+  width: 70%;
+  height: 70%;
+  position: relative;
+}
+.header .header__hamburger .header__hamburger-icon .header__hamburger-line1::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 35px;
+  height: 2.5px;
+  background-color: #000000;
+}
+.header .header__hamburger .header__hamburger-icon .header__hamburger-line2::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 2px;
+  width: 35px;
+  height: 2.5px;
+  background-color: #000000;
+}
+.header .header__hamburger .header__hamburger-icon .header__hamburger-line3::before {
+  content: "";
+  top: 25px;
+  left: 2px;
+  position: absolute;
+  width: 35px;
+  height: 2.5px;
+  background-color: #000000;
+}
+.header .header__logo {
+  width: 40%;
+  height: 100%;
+}
+.header .header__logo .header__logo-icon {
+  width: 90%;
+  height: 90%;
+}/*# sourceMappingURL=main.css.map */

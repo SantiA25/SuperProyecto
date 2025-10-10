@@ -1,0 +1,32 @@
+{
+    "name": "alex-manuel-lima-valle",
+    "version": "1.0.0",
+    "description": "website about ocean",
+    "main": "./js/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "live-server",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SantiA25/SuperProyecto.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/SantiA25/SuperProyecto/issues"
+    },
+    "homepage": "https://github.com/SantiA25/SuperProyecto#readme",
+    "devDependencies": {
+        "live-server": "^1.2.2",
+        "vite": "^7.1.9"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1"
+    }
+}
