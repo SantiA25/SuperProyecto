@@ -1,24 +1,28 @@
 @import '../../node_modules/normalize.css/normalize.css';
-.header {
+body {
+  font-family: "Comfortaa", "Courier New";
+}
+body .header {
   width: 100%;
   height: 60px;
   display: flex;
   flex-flow: row wrap;
-  box-shadow: 1px 1px 15px 5px rgb(182, 182, 182);
+  box-shadow: 1px 1px 15px 5px rgb(199, 199, 199);
+  font-family: "ArchitectsDaughter-Regular";
 }
-.header .header__hamburger {
+body .header .header__hamburger {
   width: 15%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-.header .header__hamburger .header__hamburger-icon {
+body .header .header__hamburger .header__hamburger-icon {
   width: 70%;
   height: 70%;
   position: relative;
 }
-.header .header__hamburger .header__hamburger-icon .header__hamburger-line1::before {
+body .header .header__hamburger .header__hamburger-icon .header__hamburger-line1::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -27,7 +31,7 @@
   height: 2.5px;
   background-color: #000000;
 }
-.header .header__hamburger .header__hamburger-icon .header__hamburger-line2::before {
+body .header .header__hamburger .header__hamburger-icon .header__hamburger-line2::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -36,7 +40,7 @@
   height: 2.5px;
   background-color: #000000;
 }
-.header .header__hamburger .header__hamburger-icon .header__hamburger-line3::before {
+body .header .header__hamburger .header__hamburger-icon .header__hamburger-line3::before {
   content: "";
   top: 25px;
   left: 2px;
@@ -45,11 +49,56 @@
   height: 2.5px;
   background-color: #000000;
 }
-.header .header__logo {
+body .header .header__logo {
   width: 40%;
   height: 100%;
 }
-.header .header__logo .header__logo-icon {
+body .header .header__logo .header__logo-icon {
   width: 90%;
   height: 90%;
+}
+body .section-1 {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to bottom, rgba(4, 4, 4, 0.274), rgba(30, 0, 255, 0.674) 50%), url("/img/background/background-1.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .section-1__article {
+  width: 100%;
+}
+body .section-1__article-header-title {
+  font-size: 2.3rem;
+  text-align: center;
+  line-height: 60px;
+  color: #ffffff;
+}
+body .section-1__article .section-1__main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+body .section-1__article .section-1__main .section-1__text {
+  width: 80%;
+  text-align: center;
+  color: rgb(199, 199, 199);
+  line-height: 30px;
+  font-size: 1rem;
+}
+body .section-1__article .section-1__main .section-1__button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: rgb(227, 241, 73);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf");
 }/*# sourceMappingURL=main.css.map */

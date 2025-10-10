@@ -1,56 +1,103 @@
 @use './colors';
 
-.header{
-    width: 100%;
-    height: 60px;
-    display: flex;
-    flex-flow: row wrap;
-    box-shadow: 1px 1px 15px 5px colors.$greey-light;
-    .header__hamburger{
-        width: 15%;
+body{
+    font-family: 'Comfortaa','Courier New';
+    .header{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-flow: row wrap;
+        box-shadow: 1px 1px 15px 5px colors.$greey-light;
+        font-family: "ArchitectsDaughter-Regular";
+        .header__hamburger{
+            width: 15%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            .header__hamburger-icon{
+                width: 70%;
+                height: 70%;
+                position: relative;
+                .header__hamburger-line1::before{
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: 2px;
+                    width: 35px;
+                    height: 2.5px;
+                    background-color: colors.$negro;
+                }
+                .header__hamburger-line2::before{
+                    content: '';
+                    position: absolute;
+                    top: 15px;
+                    left: 2px;
+                    width: 35px;
+                    height: 2.5px;
+                    background-color: colors.$negro;
+                }
+                .header__hamburger-line3::before{
+                    content: '';
+                    top: 25px;
+                    left: 2px;
+                    position: absolute;
+                    width: 35px;
+                    height: 2.5px;
+                    background-color: colors.$negro;
+                }
+            }
+        }
+        .header__logo{
+            width: 40%;
+            height: 100%;
+            .header__logo-icon{
+                width: 90%;
+                height: 90%;
+            }
+        }
+    }
+    
+    .section-1{
+        width: 100%;
+        height: 400px;
+        background:linear-gradient(to bottom,rgba(4, 4, 4, 0.274),rgba(30, 0, 255, 0.674) 50%) , url('/img/background/background-1.webp');
+        background-position: center;
+        background-size: cover;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        .header__hamburger-icon{
-            width: 70%;
-            height: 70%;
-            position: relative;
-            .header__hamburger-line1::before{
-                content: '';
-                position: absolute;
-                top: 5px;
-                left: 2px;
-                width: 35px;
-                height: 2.5px;
-                background-color: colors.$negro;
+        &__article{
+            width: 100%;
+            &-header{
+                &-title{
+                    font-size: 2.3rem;
+                    text-align: center;
+                    line-height: 60px;
+                    color: colors.$blanco;
+                }
             }
-            .header__hamburger-line2::before{
-                content: '';
-                position: absolute;
-                top: 15px;
-                left: 2px;
-                width: 35px;
-                height: 2.5px;
-                background-color: colors.$negro;
-            }
-            .header__hamburger-line3::before{
-                content: '';
-                top: 25px;
-                left: 2px;
-                position: absolute;
-                width: 35px;
-                height: 2.5px;
-                background-color: colors.$negro;
+            .section-1__main{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                .section-1__text{
+                    width: 80%;
+                    text-align: center;
+                    color: colors.$greey-light;
+                    line-height: 30px;
+                    font-size: 1rem;
+                }
+                .section-1__button{
+                    margin-top: 20px;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 15px;
+                    background-color: colors.$amarillo;
+                    font-weight:bolder;
+                }
             }
         }
-    }
-    .header__logo{
-        width: 40%;
-        height: 100%;
-        .header__logo-icon{
-            width: 90%;
-            height: 90%;
-        }
-    }
+    }    
 }
