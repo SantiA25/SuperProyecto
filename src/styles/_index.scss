@@ -59,7 +59,7 @@ body {
     }
   }
   .section__slider {
-    width: 100vw;
+    width: 100dvw;
     height: 480px;
     overflow: hidden;
     position: relative;
@@ -69,7 +69,7 @@ body {
       flex-flow: row wrap;
       // transform: translateX(-410px);
       .section-1 {
-        width: 100vw;
+        width: 100dvw;
         height: 480px;
         background: linear-gradient(
             to bottom,
@@ -145,7 +145,7 @@ body {
     }
   }
   .section-2 {
-    width: 100vw;
+    width: 100%;
     height: 750px;
     .section-2__title {
       width: 100%;
@@ -155,15 +155,15 @@ body {
       }
     }
     .section-2__sliders {
-      width: 100vw;
+      width: 100dvw;
       overflow-x: hidden;
       .section-2__slide {
-        width: 300vw;
+        width: 300dvw;
         height: 70%;
         display: flex;
         flex-flow: row wrap;
         .section-2__card {
-          width: 100vw;
+          width: 100dvw;
           display: flex;
           flex-flow: row wrap;
           justify-content: center;
