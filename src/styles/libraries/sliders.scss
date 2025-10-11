@@ -1,0 +1,18 @@
+.sliderContent{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .sliders{
+        display: flex;
+        transition: .9s transform;
+        .slide{
+            flex: 0 0 100%;
+        }
+    }
+}
+.slider-point{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+.sliderContent {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.sliderContent .sliders {
+  display: flex;
+  transition: 0.9s transform;
+}
+.sliderContent .sliders .slide {
+  flex: 0 0 100%;
+}
+
+.slider-point {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=sliders.css.map */
