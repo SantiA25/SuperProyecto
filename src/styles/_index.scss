@@ -1,103 +1,205 @@
 @use './colors';
 
-body{
-    font-family: 'Comfortaa','Courier New';
-    .header{
-        width: 100%;
-        height: 60px;
-        display: flex;
-        flex-flow: row wrap;
-        box-shadow: 1px 1px 15px 5px colors.$greey-light;
-        font-family: "ArchitectsDaughter-Regular";
-        .header__hamburger{
-            width: 15%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
-            .header__hamburger-icon{
-                width: 70%;
-                height: 70%;
-                position: relative;
-                .header__hamburger-line1::before{
-                    content: '';
-                    position: absolute;
-                    top: 5px;
-                    left: 2px;
-                    width: 35px;
-                    height: 2.5px;
-                    background-color: colors.$negro;
-                }
-                .header__hamburger-line2::before{
-                    content: '';
-                    position: absolute;
-                    top: 15px;
-                    left: 2px;
-                    width: 35px;
-                    height: 2.5px;
-                    background-color: colors.$negro;
-                }
-                .header__hamburger-line3::before{
-                    content: '';
-                    top: 25px;
-                    left: 2px;
-                    position: absolute;
-                    width: 35px;
-                    height: 2.5px;
-                    background-color: colors.$negro;
-                }
-            }
+body {
+  font-family: 'Comfortaa', 'Courier New';
+  .header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 1px 1px 15px 5px colors.$greey-light;
+    font-family: 'ArchitectsDaughter-Regular';
+    .header__hamburger {
+      width: 15%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      .header__hamburger-icon {
+        width: 70%;
+        height: 70%;
+        position: relative;
+        .header__hamburger-line1::before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 2px;
+          width: 30px;
+          height: 2.5px;
+          background-color: colors.$negro;
         }
-        .header__logo{
-            width: 40%;
-            height: 100%;
-            .header__logo-icon{
-                width: 90%;
-                height: 90%;
-            }
+        .header__hamburger-line2::before {
+          content: '';
+          position: absolute;
+          top: 15px;
+          left: 2px;
+          width: 30px;
+          height: 2.5px;
+          background-color: colors.$negro;
         }
+        .header__hamburger-line3::before {
+          content: '';
+          top: 25px;
+          left: 2px;
+          position: absolute;
+          width: 30px;
+          height: 2.5px;
+          background-color: colors.$negro;
+        }
+      }
     }
-    
-    .section-1{
-        width: 100%;
-        height: 400px;
-        background:linear-gradient(to bottom,rgba(4, 4, 4, 0.274),rgba(30, 0, 255, 0.674) 50%) , url('/img/background/background-1.webp');
+    .header__logo {
+      width: 40%;
+      height: 100%;
+      .header__logo-icon {
+        margin-top: 5px;
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+  .section__slider {
+    width: 100vw;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    .section__slide-main {
+      width: 200%;
+      display: flex;
+      flex-flow: row wrap;
+      // transform: translateX(-410px);
+      .section-1 {
+        width: 100vw;
+        height: 480px;
+        background: linear-gradient(
+            to bottom,
+            rgba(4, 4, 4, 0.274),
+            rgba(30, 0, 255, 0.674) 50%
+          ),
+          url('/img/background/background-1.webp');
         background-position: center;
         background-size: cover;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        &__article{
-            width: 100%;
-            &-header{
-                &-title{
-                    font-size: 2.3rem;
-                    text-align: center;
-                    line-height: 60px;
-                    color: colors.$blanco;
-                }
+        &__article {
+          width: 100%;
+          &-header {
+            &-title {
+              font-size: 2.3rem;
+              text-align: center;
+              line-height: 60px;
+              color: colors.$blanco;
             }
-            .section-1__main{
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                .section-1__text{
-                    width: 80%;
-                    text-align: center;
-                    color: colors.$greey-light;
-                    line-height: 30px;
-                    font-size: 1rem;
-                }
-                .section-1__button{
-                    margin-top: 20px;
-                    border: none;
-                    border-radius: 5px;
-                    padding: 15px;
-                    background-color: colors.$amarillo;
-                    font-weight:bolder;
-                }
+          }
+          .section-1__main {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            .section-1__text {
+              width: 80%;
+              text-align: center;
+              color: colors.$greey-light;
+              line-height: 30px;
+              font-size: 1rem;
+            }
+            .section-1__button {
+              margin-top: 20px;
+              border: none;
+              border-radius: 5px;
+              padding: 15px;
+              background-color: colors.$amarillo;
+              font-weight: bolder;
+            }
+          }
+        }
+      }
+      .section-1.section-1--background {
+        background: linear-gradient(
+            to bottom,
+            rgba(4, 4, 4, 0.274),
+            rgba(30, 0, 255, 0.674) 50%
+          ),
+          url('/img/background/background-2.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .section__slide-button {
+      height: 60px;
+      width: 100%;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      .section__slide-point {
+        margin: 15px 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: colors.$amarillo;
+      }
+    }
+  }
+  .section-2 {
+    width: 100vw;
+    height: 750px;
+    .section-2__title {
+      width: 100%;
+      .section-2__h2 {
+        padding: 20px 0px;
+        text-align: center;
+      }
+    }
+    .section-2__sliders {
+      width: 100vw;
+      overflow-x: hidden;
+      .section-2__slide {
+        width: 300vw;
+        height: 70%;
+        display: flex;
+        flex-flow: row wrap;
+        .section-2__card {
+          width: 100vw;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          .section-2__card-img {
+            padding: 10px 10px;
+            border: solid 1px colors.$greey-light;
+          }
+          .section-2__card-description {
+              width: 100%;
+              .section-2__card-title {
+                text-align: center;
+              }
+              .section-2__card-text {
+                text-align: center;
+                color: colors.$grey-hard;
+              }
             }
         }
-    }    
+      }
+    }
+    .section-2__button {
+      margin-top: 40px;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      .section-2__button-point {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+        background-color: colors.$blue-white;
+        border-radius: 20px;
+      }
+    }
+  }
 }
