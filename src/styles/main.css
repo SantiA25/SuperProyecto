@@ -210,6 +210,31 @@ body .main .section-4 .section-4__counts .section-4__count .section-4__number-ca
 body .main .section-4 .section-4__counts .section-4__count .section-4__count-text {
   background-color: greenyellow;
 }
+body .main .section-5 {
+  width: 100%;
+}
+body .main .section-5 .section-5__slider .section-5__slide .section-5__image {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .main .section-5 .section-5__slider .section-5__slide .section-5__image .section-5__img {
+  width: 90%;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+body .main .section-5 .section-5__slider .slider-point > p {
+  background-color: rgb(47, 105, 239);
+}
+body .main .section-5 .section-5__article {
+  width: 100%;
+}
+body .main .section-5 .section-5__article .section-5__article-title {
+  text-align: center;
+  font-size: 1.7rem;
+}
 
 @font-face {
   font-family: "Comfortaa";
