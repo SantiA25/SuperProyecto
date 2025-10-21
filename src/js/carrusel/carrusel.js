@@ -12,7 +12,7 @@ const carrusel = (function () {
           if (typeof sliderPoint !== 'undefined') {
             for (let i = 0; i < sliderCant; i++) {
               sliderPoint[key].innerHTML += `
-                                <p class="slider-point-event" data-slide="${i}" style="border-radius:10px;width:20px;height:20px;background:#000000;margin:0px 5px;"></p>
+                                <p class="slider-point-event" data-slide="${i}" style="border-radius:10px;width:20px;height:20px;margin:0px 5px;"></p>
                             `
             }
             sliderPoint[key].addEventListener('click', event => {

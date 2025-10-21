@@ -59,6 +59,157 @@ body .header .header__logo .header__logo-icon {
   width: 80%;
   height: 80%;
 }
+body .main .section__slider {
+  height: 400px;
+  background-color: red;
+  position: relative;
+}
+body .main .section__slider .section__slide-main {
+  width: 100%;
+  height: 100%;
+}
+body .main .section__slider .section__slide-main .section-1 {
+  background: linear-gradient(to top, rgba(7, 7, 198, 0.661), rgba(10, 0, 0, 0.559)), url(/img/background/background-1.webp);
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+body .main .section__slider .section__slide-main .section-1 .section-1__article {
+  height: 70%;
+}
+body .main .section__slider .section__slide-main .section-1 .section-1__article .section-1__article-header {
+  width: 100%;
+}
+body .main .section__slider .section__slide-main .section-1 .section-1__article .section-1__article-header .section-1__article-header-title {
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 2.2rem;
+}
+body .main .section__slider .section__slide-main .section-1 .section-1__article .section-1__main {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+body .main .section__slider .section__slide-main .section-1 .section-1__article .section-1__main .section-1__text {
+  padding: 0px 40px;
+  text-align: center;
+  color: rgb(199, 199, 199);
+  line-height: 25px;
+}
+body .main .section__slider .section__slide-main .section-1 .section-1__article .section-1__main .section-1__button {
+  text-transform: uppercase;
+  width: 40%;
+  border: 0px;
+  border-radius: 6px;
+  padding: 17px;
+  background-color: rgb(227, 241, 73);
+}
+body .main .section__slider .section__slide-main .section-1.section-1--background {
+  background: linear-gradient(to top, rgba(7, 7, 198, 0.661), rgba(10, 0, 0, 0.559)), url(/img/background/background-2.jpg);
+  background-size: cover;
+}
+body .main .section__slider .section__slide-button {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 30px;
+}
+body .main .section__slider .section__slide-button .slider-point-event {
+  background-color: rgb(227, 241, 73);
+}
+body .main .section-2 .section-2__title {
+  width: 100%;
+}
+body .main .section-2 .section-2__title .section-2__h2 {
+  padding: 30px 0px;
+  text-align: center;
+}
+body .main .section-2 .section-2__sliders .section-2__slide .section-2__card {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+body .main .section-2 .section-2__sliders .section-2__slide .section-2__card .section-2__card-img {
+  padding: 10px;
+  border: 1px solid rgb(199, 199, 199);
+  width: 90%;
+}
+body .main .section-2 .section-2__sliders .section-2__slide .section-2__card .section-2__card-description .section-2__card-title {
+  text-align: center;
+}
+body .main .section-2 .section-2__sliders .section-2__slide .section-2__card .section-2__card-description .section-2__card-text {
+  text-align: center;
+}
+body .main .section-2 .section-2__slider-point {
+  margin-top: 20px;
+  padding: 40px 0px;
+}
+body .main .section-2 .section-2__slider-point > p {
+  background-color: rgb(14, 134, 167);
+}
+body .main .section-3 {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #ebebeb;
+}
+body .main .section-3 .section-3__card {
+  padding: 50px 0px 20px 0px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .main .section-3 .section-3__card .section-3__card-description {
+  padding: 0px 30px;
+}
+body .main .section-3 .section-3__card .section-3__card-description .section-3__card-description-h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+body .main .section-3 .section-3__card .section-3__card-description .section-3__card-description-text {
+  text-align: center;
+  color: #3a3a3a;
+}
+body .main .section-4 {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/background/background-3.jpg);
+  background-size: cover;
+  padding: 50px 0px;
+}
+body .main .section-4 .section-4__counts {
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: green;
+  row-gap: 20px;
+}
+body .main .section-4 .section-4__counts .section-4__count {
+  background-color: red;
+  width: 45%;
+  height: 150px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+body .main .section-4 .section-4__counts .section-4__count .section-4__number-card {
+  background-color: blueviolet;
+}
+body .main .section-4 .section-4__counts .section-4__count .section-4__number-card .section-4__number {
+  font-size: 2rem;
+  padding: 10px 0px;
+}
+body .main .section-4 .section-4__counts .section-4__count .section-4__count-text {
+  background-color: greenyellow;
+}
 
 @font-face {
   font-family: "Comfortaa";

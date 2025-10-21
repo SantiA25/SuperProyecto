@@ -16,4 +16,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+.slider-point .slider-point-event {
+  background-color: #000000;
 }/*# sourceMappingURL=sliders.css.map */
