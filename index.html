@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/main.css" />
-    <link rel="stylesheet" href="/src/styles/libraries/sliders.css">
+    <link rel="stylesheet" href="/src/styles/libraries/sliders.css" />
     <title>Document</title>
   </head>
   <body>
@@ -240,20 +240,22 @@
         </div>
         <article class="section-5__article">
           <h4 class="section-5__article-title">Why Choose Divers</h4>
-          <div class="section-5__accordions">
-            <div class="section-5__accordion-item">
-              <div class="section-5__accordion-header">
-                <div class="section-5__accordion-icon-up">
-                  <p><i class="bi bi-caret-right-fill"></i></p>
+          <div class="accordion">
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <div class="accordion__icon" data-target="#item-1">
+                  <p class="accordion__icon-p">
+                    <i class="bi bi-caret-right-fill accordion__icon-i"></i>
+                  </p>
                 </div>
-                <div class="section-5__accordion-title">
-                  <h5 class="section-5__accordion-h5">
+                <div class="accordion__title">
+                  <h5 class="accordion-h5">
                     20+ Years of Experience in Diving
                   </h5>
                 </div>
               </div>
-              <div class="section-5__accordion-body">
-                <p class="section-5__accordion-text">
+              <div class="accordion__body" id="item-1">
+                <p class="accordion__body-text">
                   Our instructors have more than 20 years of experience in
                   diving. It makes us the #1 choice among travelers who are
                   looking for unforgettable and 100% safe diving experience with
@@ -261,42 +263,47 @@
                 </p>
               </div>
             </div>
-            <div class="section-5__accordion-item">
-              <div class="section-5__accordion-header">
-                <div class="section-5__accordion-icon-up">
-                  <p><i class="bi bi-caret-right-fill"></i></p>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <div class="accordion__icon" data-target="#item-3">
+                  <p class="accordion__icon-p">
+                    <i class="bi bi-caret-right-fill accordion__icon-i"></i>
+                  </p>
                 </div>
-                <div class="section-5__accordion-title">
-                  <h5 class="section-5__accordion-h5">
+                <div class="accordion__title">
+                  <h5 class="accordion-h5">
                     Carefully Chosen Team of Instructors
                   </h5>
                 </div>
               </div>
-              <div class="section-5__accordion-body">
-                <p class="section-5__accordion-text">
-                  Our experienced team of Diving Professionals all have over 15
-                  years of diving experience and have been professionally
-                  certified. Our team includes the most experienced SSI
-                  instructors in the world who are always happy to help you.
+              <div class="accordion__body" id="item-3">
+                <p class="accordion__body-text">
+                  Our instructors have more than 20 years of experience in
+                  diving. It makes us the #1 choice among travelers who are
+                  looking for unforgettable and 100% safe diving experience with
+                  advice from the best divers.
                 </p>
               </div>
             </div>
-            <div class="section-5__accordion-item">
-              <div class="section-5__accordion-header">
-                <div class="section-5__accordion-icon-up">
-                  <p><i class="bi bi-caret-right-fill"></i></p>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <div class="accordion__icon" data-target="#item-2">
+                  <p class="accordion__icon-p">
+                    <i class="bi bi-caret-right-fill accordion__icon-i"></i>
+                  </p>
                 </div>
-                <div class="section-5__accordion-title">
-                  <h5 class="section-5__accordion-h5">Affordable Prices</h5>
+                <div class="accordion__title">
+                  <h5 class="accordion-h5">
+                    Carefully Chosen Team of Instructors
+                  </h5>
                 </div>
               </div>
-              <div class="section-5__accordion-body">
-                <p class="section-5__accordion-text">
-                  Divers Center has an affordable pricing policy that allows us
-                  to offer the best diving tours and services at reasonable
-                  prices. This is one of many reasons why divers from all over
-                  US choose our center to dive & travel while also saving a lot
-                  of money.
+              <div class="accordion__body" id="item-2">
+                <p class="accordion__body-text">
+                  Our instructors have more than 20 years of experience in
+                  diving. It makes us the #1 choice among travelers who are
+                  looking for unforgettable and 100% safe diving experience with
+                  advice from the best divers.
                 </p>
               </div>
             </div>
@@ -443,7 +450,7 @@
           </div>
           <div class="section-8__card-gallery">
             <div class="section-8__gallery-img">
-              <img src="/img/gallery/gallery-2.jpg" alt="Blue Corner Wall"/>
+              <img src="/img/gallery/gallery-2.jpg" alt="Blue Corner Wall" />
             </div>
             <div class="section-8__gallery-title">
               <h3 class="section-8__gallery-h3">Blue Corner Wall</h3>
@@ -482,7 +489,10 @@
           </div>
           <div class="section-8__card-gallery">
             <div class="section-8__gallery-img">
-              <img src="/img/gallery/gallery-6.jpg" alt="Shark and Yolanda Reef" />
+              <img
+                src="/img/gallery/gallery-6.jpg"
+                alt="Shark and Yolanda Reef"
+              />
             </div>
             <div class="section-8__gallery-title">
               <h3 class="section-8__gallery-h3">Shark and Yolanda Reef</h3>
@@ -527,7 +537,7 @@
           <p class="section-9__text-p">Subscribe to our newsletter</p>
         </div>
         <div class="section-9__email">
-          <input type="text" class="section-9__input-email">
+          <input type="text" class="section-9__input-email" />
           <span class="section-9__email-span">The text field is required.</span>
         </div>
         <div class="section-9__button-container">
@@ -541,73 +551,120 @@
             <div class="section-10__slider sliders">
               <div class="section-10__slide slide">
                 <div class="section-10__slide-image">
-                  <img src="/img/avatar/persona-4.jpg" alt="" class="section-10__slide-img">
+                  <img
+                    src="/img/avatar/persona-4.jpg"
+                    alt=""
+                    class="section-10__slide-img"
+                  />
                 </div>
                 <div class="section-10__slide-description">
                   <h3 class="section-10__slide-title">Peter Martinez</h3>
                   <div class="section-10__slide-text">
-                    <p class="section-10__slide-p">Peter is PADI Course Director and our company’s Founder</p>
+                    <p class="section-10__slide-p">
+                      Peter is PADI Course Director and our company’s Founder
+                    </p>
                   </div>
                   <div class="section-10__slide-social">
-                    <p class="section-10__slide-social-icon"><i class="bi bi-facebook"></i></p>
-                    <p class="section-10__slide-social-icon"><i class="bi bi-twitter-x"></i></p>
-                    <p class="section-10__slide-social-icon"><i class="bi bi-instagram"></i></p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-facebook"></i>
+                    </p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-twitter-x"></i>
+                    </p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-instagram"></i>
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="section-10__slide slide">
                 <div class="section-10__slide-image">
-                  <img src="/img/avatar/persona-5.jpg" alt="" class="section-10__slide-img">
+                  <img
+                    src="/img/avatar/persona-5.jpg"
+                    alt=""
+                    class="section-10__slide-img"
+                  />
                 </div>
                 <div class="section-10__slide-description">
                   <h3 class="section-10__slide-title">Peter Martinez</h3>
                   <div class="section-10__slide-text">
-                    <p class="section-10__slide-p">Peter is PADI Course Director and our company’s Founder</p>
+                    <p class="section-10__slide-p">
+                      Peter is PADI Course Director and our company’s Founder
+                    </p>
                   </div>
                   <div class="section-10__slide-social">
-                    <p class="section-10__slide-social-icon"><i class="bi bi-facebook"></i></p>
-                    <p class="section-10__slide-social-icon"><i class="bi bi-twitter-x"></i></p>
-                    <p class="section-10__slide-social-icon"><i class="bi bi-instagram"></i></p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-facebook"></i>
+                    </p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-twitter-x"></i>
+                    </p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-instagram"></i>
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="section-10__slide slide">
                 <div class="section-10__slide-image">
-                  <img src="/img/avatar/persona-6.jpg" alt="" class="section-10__slide-img">
+                  <img
+                    src="/img/avatar/persona-6.jpg"
+                    alt=""
+                    class="section-10__slide-img"
+                  />
                 </div>
                 <div class="section-10__slide-description">
                   <h3 class="section-10__slide-title">Peter Martinez</h3>
                   <div class="section-10__slide-text">
-                    <p class="section-10__slide-p">Peter is PADI Course Director and our company’s Founder</p>
+                    <p class="section-10__slide-p">
+                      Peter is PADI Course Director and our company’s Founder
+                    </p>
                   </div>
                   <div class="section-10__slide-social">
-                    <p class="section-10__slide-social-icon"><i class="bi bi-facebook"></i></p>
-                    <p class="section-10__slide-social-icon"><i class="bi bi-twitter-x"></i></p>
-                    <p class="section-10__slide-social-icon"><i class="bi bi-instagram"></i></p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-facebook"></i>
+                    </p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-twitter-x"></i>
+                    </p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-instagram"></i>
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="section-10__slide slide">
                 <div class="section-10__slide-image">
-                  <img src="/img/avatar/persona-7.jpg" alt="" class="section-10__slide-img">
+                  <img
+                    src="/img/avatar/persona-7.jpg"
+                    alt=""
+                    class="section-10__slide-img"
+                  />
                 </div>
                 <div class="section-10__slide-description">
                   <h3 class="section-10__slide-title">Peter Martinez</h3>
                   <div class="section-10__slide-text">
-                    <p class="section-10__slide-p">Peter is PADI Course Director and our company’s Founder</p>
+                    <p class="section-10__slide-p">
+                      Peter is PADI Course Director and our company’s Founder
+                    </p>
                   </div>
                   <div class="section-10__slide-social">
-                    <p class="section-10__slide-social-icon"><i class="bi bi-facebook"></i></p>
-                    <p class="section-10__slide-social-icon"><i class="bi bi-twitter-x"></i></p>
-                    <p class="section-10__slide-social-icon"><i class="bi bi-instagram"></i></p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-facebook"></i>
+                    </p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-twitter-x"></i>
+                    </p>
+                    <p class="section-10__slide-social-icon">
+                      <i class="bi bi-instagram"></i>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="section-10__button-action slider-point">
-        </div>
+        <div class="section-10__button-action slider-point"></div>
       </section>
       <section class="section-11">
         <div class="section-11__container">
@@ -616,54 +673,76 @@
             <div class="section-11__slider sliders">
               <div class="section-11__slide slide">
                 <div class="section-11__slide-image">
-                  <img src="/img/ourOcean/ocean-1.jpg" alt="" class="section-11__slide-img">
+                  <img
+                    src="/img/ourOcean/ocean-1.jpg"
+                    alt=""
+                    class="section-11__slide-img"
+                  />
                 </div>
                 <div class="section-11__slide-text">
                   <div class="section-11__slide-text-time">
                     <p class="section-11__slide-p">August 9, 2021</p>
                   </div>
                   <div class="section-11__slide-title">
-                    <h3 class="section-11__slide-title-h3">New Caledonia: The Lagoon of All Hopes</h3>
+                    <h3 class="section-11__slide-title-h3">
+                      New Caledonia: The Lagoon of All Hopes
+                    </h3>
                   </div>
                   <div class="section-11__slide-description">
                     <div class="section-11__slide-description-p">
-                      As we dived for the very first time in the lagoon of New Caledonia, at Duck Island, with only our masks and fins...
+                      As we dived for the very first time in the lagoon of New
+                      Caledonia, at Duck Island, with only our masks and fins...
                     </div>
                   </div>
                 </div>
               </div>
               <div class="section-11__slide slide">
                 <div class="section-11__slide-image">
-                  <img src="/img/ourOcean/ocean-2.jpg" alt="" class="section-11__slide-img">
+                  <img
+                    src="/img/ourOcean/ocean-2.jpg"
+                    alt=""
+                    class="section-11__slide-img"
+                  />
                 </div>
                 <div class="section-11__slide-text">
                   <div class="section-11__slide-text-time">
                     <p class="section-11__slide-p">August 9, 2021</p>
                   </div>
                   <div class="section-11__slide-title">
-                    <h3 class="section-11__slide-title-h3">Scuba Diving in Okinawa: A First-timer Guide</h3>
+                    <h3 class="section-11__slide-title-h3">
+                      Scuba Diving in Okinawa: A First-timer Guide
+                    </h3>
                   </div>
                   <div class="section-11__slide-description">
                     <div class="section-11__slide-description-p">
-                      It is one of these places where it is not so straightforward to organize a scuba diving trip. There are so many...
+                      It is one of these places where it is not so
+                      straightforward to organize a scuba diving trip. There are
+                      so many...
                     </div>
                   </div>
                 </div>
               </div>
               <div class="section-11__slide slide">
                 <div class="section-11__slide-image">
-                  <img src="/img/ourOcean/ocean-3.jpg" alt="" class="section-11__slide-img">
+                  <img
+                    src="/img/ourOcean/ocean-3.jpg"
+                    alt=""
+                    class="section-11__slide-img"
+                  />
                 </div>
                 <div class="section-11__slide-text">
                   <div class="section-11__slide-text-time">
                     <p class="section-11__slide-p">August 9, 2021</p>
                   </div>
                   <div class="section-11__slide-title">
-                    <h3 class="section-11__slide-title-h3">Shore Diving in Maui & Big Island</h3>
+                    <h3 class="section-11__slide-title-h3">
+                      Shore Diving in Maui & Big Island
+                    </h3>
                   </div>
                   <div class="section-11__slide-description">
                     <div class="section-11__slide-description-p">
-                      The Hawaiian Archipelago is full of bucket list dives with exciting adventures such as diving in the crater...
+                      The Hawaiian Archipelago is full of bucket list dives with
+                      exciting adventures such as diving in the crater...
                     </div>
                   </div>
                 </div>
@@ -681,22 +760,46 @@
         </div>
         <div class="footer__gallery-container">
           <div class="footer__gallery-container-item">
-            <img src="/img/gallery-footer/gallery-1.jpg" alt="" class="footer__gallery-container-item-img">
+            <img
+              src="/img/gallery-footer/gallery-1.jpg"
+              alt=""
+              class="footer__gallery-container-item-img"
+            />
           </div>
           <div class="footer__gallery-container-item">
-            <img src="/img/gallery-footer/gallery-2.jpg" alt="" class="footer__gallery-container-item-img">
+            <img
+              src="/img/gallery-footer/gallery-2.jpg"
+              alt=""
+              class="footer__gallery-container-item-img"
+            />
           </div>
           <div class="footer__gallery-container-item">
-            <img src="/img/gallery-footer/gallery-3.jpg" alt="" class="footer__gallery-container-item-img">
+            <img
+              src="/img/gallery-footer/gallery-3.jpg"
+              alt=""
+              class="footer__gallery-container-item-img"
+            />
           </div>
           <div class="footer__gallery-container-item">
-            <img src="/img/gallery-footer/gallery-4.jpg" alt="" class="footer__gallery-container-item-img">
+            <img
+              src="/img/gallery-footer/gallery-4.jpg"
+              alt=""
+              class="footer__gallery-container-item-img"
+            />
           </div>
           <div class="footer__gallery-container-item">
-            <img src="/img/gallery-footer/gallery-5.jpg" alt="" class="footer__gallery-container-item-img">
+            <img
+              src="/img/gallery-footer/gallery-5.jpg"
+              alt=""
+              class="footer__gallery-container-item-img"
+            />
           </div>
           <div class="footer__gallery-container-item">
-            <img src="/img/gallery-footer/gallery-6.jpg" alt="" class="footer__gallery-container-item-img">
+            <img
+              src="/img/gallery-footer/gallery-6.jpg"
+              alt=""
+              class="footer__gallery-container-item-img"
+            />
           </div>
         </div>
       </div>
@@ -705,22 +808,42 @@
           <h3 class="footer__link-h3">Quick Links</h3>
         </div>
         <div class="footer__link-list">
-          <p class="footer__link-icon"><i class="bi bi-dash"></i><a href="#">About Us</a></p>
-          <p class="footer__link-icon"><i class="bi bi-dash"></i><a href="#">What We Offer</a></p>
-          <p class="footer__link-icon"><i class="bi bi-dash"></i><a href="#">FAQ</a></p>
-          <p class="footer__link-icon"><i class="bi bi-dash"></i><a href="#">Instructors</a></p>
-          <p class="footer__link-icon"><i class="bi bi-dash"></i><a href="#">Contact Us</a></p>
-          <p class="footer__link-icon"><i class="bi bi-dash"></i><a href="#">Blog</a></p>
-          <p class="footer__link-icon"><i class="bi bi-dash"></i><a href="#">Gallery</a></p>
-          <p class="footer__link-icon"><i class="bi bi-dash"></i><a href="#">Pricing</a></p>
+          <p class="footer__link-icon">
+            <i class="bi bi-dash"></i><a href="#">About Us</a>
+          </p>
+          <p class="footer__link-icon">
+            <i class="bi bi-dash"></i><a href="#">What We Offer</a>
+          </p>
+          <p class="footer__link-icon">
+            <i class="bi bi-dash"></i><a href="#">FAQ</a>
+          </p>
+          <p class="footer__link-icon">
+            <i class="bi bi-dash"></i><a href="#">Instructors</a>
+          </p>
+          <p class="footer__link-icon">
+            <i class="bi bi-dash"></i><a href="#">Contact Us</a>
+          </p>
+          <p class="footer__link-icon">
+            <i class="bi bi-dash"></i><a href="#">Blog</a>
+          </p>
+          <p class="footer__link-icon">
+            <i class="bi bi-dash"></i><a href="#">Gallery</a>
+          </p>
+          <p class="footer__link-icon">
+            <i class="bi bi-dash"></i><a href="#">Pricing</a>
+          </p>
         </div>
       </div>
       <div class="footer__contacts">
         <h4 class="footer__contacts-title">Get in touch</h4>
         <div class="footer__contact">
           <div class="footer__contact-card">
-            <p class="footer__contact-icon"><i class="bi bi-geo-alt-fill"></i></p>
-            <p class="footer__contact-text">523 Sylvan Ave, 5th Floor Mountain View, CA 94041 USA</p>
+            <p class="footer__contact-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </p>
+            <p class="footer__contact-text">
+              523 Sylvan Ave, 5th Floor Mountain View, CA 94041 USA
+            </p>
           </div>
           <div class="footer__contact-card">
             <p class="footer__contact-icon"><i class="bi bi-telephone"></i></p>
@@ -734,19 +857,28 @@
       </div>
       <div class="footer__social-media">
         <div class="footer__social-media-card">
-          <p class="footer__social-media-card-icon"><i class="bi bi-facebook"></i></p>
+          <p class="footer__social-media-card-icon">
+            <i class="bi bi-facebook"></i>
+          </p>
         </div>
         <div class="footer__social-media-card">
-          <p class="footer__social-media-card-icon"><i class="bi bi-twitter-x"></i></p>
+          <p class="footer__social-media-card-icon">
+            <i class="bi bi-twitter-x"></i>
+          </p>
         </div>
         <div class="footer__social-media-card">
-          <p class="footer__social-media-card-icon"><i class="bi bi-instagram"></i></p>
+          <p class="footer__social-media-card-icon">
+            <i class="bi bi-instagram"></i>
+          </p>
         </div>
       </div>
       <div class="footer__foot">
-        <p class="footer__foot-description">©  2025 Divers.  All rights reserved. Privacy Policy.</p>
+        <p class="footer__foot-description">
+          © 2025 Divers. All rights reserved. Privacy Policy.
+        </p>
       </div>
     </footer>
+    <script src="http://localhost:5173/src/js/accordion/accordion.js"></script>
     <script src="http://localhost:5173/src/js/carrusel/carrusel.js"></script>
   </body>
 </html>

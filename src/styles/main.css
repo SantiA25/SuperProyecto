@@ -1,5 +1,58 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+.accordion .accordion__item .accordion__header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+.accordion .accordion__item .accordion__header .accordion__icon {
+  height: 80%;
+  margin-left: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.accordion .accordion__item .accordion__header .accordion__icon .accordion__icon-p {
+  color: #002cdb;
+  transition: transform 0.5s;
+}
+.accordion .accordion__item .accordion__header .accordion__icon .accordion__icon-p .accordion__icon-i {
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 1px 1px 8px #6e6e6e;
+  width: 100%;
+  height: 100%;
+  transition: color 0.5s;
+}
+.accordion .accordion__item .accordion__header .accordion__icon .accordion__icon-p .accordion__icon-i.active-color {
+  background-color: #002cdb;
+}
+.accordion .accordion__item .accordion__header .accordion__icon .accordion__icon-p.rotate {
+  color: #fff;
+  transform: rotate(90deg);
+}
+.accordion .accordion__item .accordion__header .accordion__title {
+  height: 80%;
+  margin-left: 20px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.accordion .accordion__item .accordion__body {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+.accordion .accordion__item .accordion__body.active {
+  overflow: none;
+  height: 150px;
+}
+
 body {
   font-family: "Comfortaa", "Courier New";
 }
@@ -189,51 +242,21 @@ body .main .section-4 .section-4__counts {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  background-color: green;
   row-gap: 20px;
 }
 body .main .section-4 .section-4__counts .section-4__count {
-  background-color: red;
   width: 45%;
   height: 150px;
   text-align: center;
   color: #ffffff;
   font-weight: bold;
 }
-body .main .section-4 .section-4__counts .section-4__count .section-4__number-card {
-  background-color: blueviolet;
-}
 body .main .section-4 .section-4__counts .section-4__count .section-4__number-card .section-4__number {
   font-size: 2rem;
   padding: 10px 0px;
 }
-body .main .section-4 .section-4__counts .section-4__count .section-4__count-text {
-  background-color: greenyellow;
-}
 body .main .section-5 {
   width: 100%;
-}
-body .main .section-5 .section-5__slider .section-5__slide .section-5__image {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-body .main .section-5 .section-5__slider .section-5__slide .section-5__image .section-5__img {
-  width: 90%;
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
-body .main .section-5 .section-5__slider .slider-point > p {
-  background-color: rgb(47, 105, 239);
-}
-body .main .section-5 .section-5__article {
-  width: 100%;
-}
-body .main .section-5 .section-5__article .section-5__article-title {
-  text-align: center;
-  font-size: 1.7rem;
 }
 
 @font-face {
